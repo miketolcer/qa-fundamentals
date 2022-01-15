@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B99</title>
+    <link rel="stylesheet" href="/styles">
+</head>
+<body>
+    <header>
+        <h1>Nine-Nine!</h1>
+    </header>
+
+    <hr/>
+
+    <main>
+        <section id="btn-container">
+            <button id="all">Get All Characters</button>
+        </section>
+
+        <hr/>
+
+        <section id="form-container">
+            <form id="age-form">
+                <h2>Get characters older than...</h2>
+                <input type="text" placeholder="What's the age limit?" id="age-input"/>
+                <button>Get Old Characters</button>
+            </form>
+
+            <form id="create-form">
+                <h2>Create a New Character</h2>
+                <input type="text" id="first" placeholder="First Name"/>
+                <input type="text" id="last" placeholder="Last Name"/>
+                <select>
+                    <option value="female">female</option>
+                    <option value="male">male</option>
+                    <option value="nonbinary">non-binary</option>
+                </select>
+                <input type="number" id="age" placeholder="age"/>
+                <label for="likes">List likes separated by commas (limit 3):</label>
+                <textarea id="likes"></textarea>
+                <button>Add New Character</button>
+            </form>
+        </section> 
+        
+        <hr/>
+        
+        <section id="char-container"></section>
+    </main>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js"></script>
+</body>
+</html>

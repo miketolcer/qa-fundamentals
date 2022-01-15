@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>QA Fundamentals Project | Devmountain Foundations</title>
+
+      <link
+        href="_static/pygments.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <link href="_static/devmountain.css" rel="stylesheet" type="text/css" />
+          <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+          <link rel="stylesheet" type="text/css" href="_static/devmountain.css" />
+          <link rel="stylesheet" type="text/css" href="_static/plot_directive.css" />
+          <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+
+      <script src="_static/pdfobject.min.js"></script>
+      
+  </head>
+  <body>
+      <div id="handouts-container">
+        <header id="page-header">
+            <p id="project-title">Devmountain Foundations</p>
+            <p id="page-title">QA Fundamentals Project</p>
+              <p id="backlink">
+                <a href="/"> &laquo; Back to Homepage </a>
+              </p>
+        </header>
+
+        <nav id="page-toc"><ul>
+<li><a class="reference internal" href="#">QA Fundamentals Project</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#summary">Summary</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#setup">Setup</a><ul>
+<li><a class="reference internal" href="#id1">Summary</a></li>
+<li><a class="reference internal" href="#steps">Steps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#exploratory-testing">Exploratory Testing</a><ul>
+<li><a class="reference internal" href="#id2">Summary</a></li>
+<li><a class="reference internal" href="#app-overview">App Overview</a></li>
+<li><a class="reference internal" href="#id3">Steps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#test-plan">Test Plan</a><ul>
+<li><a class="reference internal" href="#id4">Summary</a></li>
+<li><a class="reference internal" href="#id5">Steps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#manual-testing">Manual Testing</a><ul>
+<li><a class="reference internal" href="#id6">Summary</a></li>
+<li><a class="reference internal" href="#id7">Steps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#automation">Automation</a><ul>
+<li><a class="reference internal" href="#id8">Summary</a></li>
+<li><a class="reference internal" href="#id9">Steps</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#going-further">Going Further</a><ul>
+<li><a class="reference internal" href="#more-testing">More Testing</a></li>
+<li><a class="reference internal" href="#questions">Questions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+
+        <main id="page-content">
+            <section class="section" id="qa-fundamentals-project">
+<h1>QA Fundamentals Project</h1>
+<section class="section" id="introduction">
+<h2>Introduction</h2>
+<section class="section" id="description">
+<h3>Description</h3>
+<p>Over the next few days, you’ll be working on the QA Fundamentals Project as preparation for your Capstone Project. This project will include manual tests and automated tests.</p>
+</section>
+<section class="section" id="summary">
+<h3>Summary</h3>
+<p>First, you’ll need to set up the project you’ll be testing (it might look familiar – it’s an upgraded version of a demo from Foundations) and get it running. Then you’ll do some exploration and figure out what you want to test. You’ll make a test plan and carry out your manual tests. After manual testing, you’ll create automated tests. Last, you get to choose what other topics you might want to practice with.</p>
+</section>
+</section>
+<section class="section" id="setup">
+<h2>Setup</h2>
+<section class="section" id="id1">
+<h3>Summary</h3>
+<p>In this section, you’ll be downloading and setting up the app that you’ll be testing.</p>
+</section>
+<section class="section" id="steps">
+<h3>Steps</h3>
+<ol class="arabic simple">
+<li><p>Download the lab exercise materials for this exercise from Frodo.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> to the folder you just downloaded and into the <cite>nine-nine</cite> folder.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">install</span></code> to get the needed dependencies.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">start</span></code> to spin up the app. This will open the correct port (4000) in your browser and start the server. This server serves static files and can handle HTTP requests. Feel free to review the files if you’d like.</p></li>
+</ol>
+</section>
+</section>
+<section class="section" id="exploratory-testing">
+<h2>Exploratory Testing</h2>
+<section class="section" id="id2">
+<h3>Summary</h3>
+<p>Take some time to explore the app and find your selectors. We’ll use this time to prep for both manual and automation tests.</p>
+</section>
+<section class="section" id="app-overview">
+<h3>App Overview</h3>
+<p>This is an app that can hold character information. Users should be able to view all characters or one character at a time. Characters can be deleted from the list. Users should also be able to add characters. When adding a character, only 3 “likes” will be saved. Using the form on the left, users can get back characters over a certain age.</p>
+</section>
+<section class="section" id="id3">
+<h3>Steps</h3>
+<ol class="arabic simple">
+<li><p>In your lab folder, create a file for notes.</p></li>
+<li><p>As you explore the app, take note of things you notice. Try to find some user flows. Formulate ideas of what you want to test.</p></li>
+<li><p>As you’re figuring out your tests, also take note of what selectors you might use to get the UI elements for automation later.</p></li>
+</ol>
+</section>
+</section>
+<section class="section" id="test-plan">
+<h2>Test Plan</h2>
+<section class="section" id="id4">
+<h3>Summary</h3>
+<p>This section will be for planning out your tests.</p>
+</section>
+<section class="section" id="id5">
+<h3>Steps</h3>
+<ol class="arabic">
+<li><p>Create a Trello board (or similar) for this app.</p></li>
+<li><p>Review this Test Plan:</p>
+<blockquote>
+<div><div class="togglereveal "><details class="admonition-body"><summary></summary><img alt="_images/EMTestPlan.png" src="_images/EMTestPlan.png" style="width: 100%;" />
+</details></div></div></blockquote>
+</li>
+<li><p>Create a similar test plan for the Nine-Nine app. Make sure you have the appropriate criteria.</p></li>
+<li><p>Create test cases for each test that you will run (plan at least 5 tests). You can see an example below:</p>
+<blockquote>
+<div><div class="togglereveal "><details class="admonition-body"><summary></summary><img alt="_images/EMTest.png" src="_images/EMTest.png" style="width: 100%;" />
+</details></div></div></blockquote>
+</li>
+</ol>
+</section>
+</section>
+<section class="section" id="manual-testing">
+<h2>Manual Testing</h2>
+<section class="section" id="id6">
+<h3>Summary</h3>
+<p>In this section, you’ll complete the tests that you’ve outlined in your plan.</p>
+</section>
+<section class="section" id="id7">
+<h3>Steps</h3>
+<ol class="arabic">
+<li><p>Follow the steps that you’ve written for yourself to complete each of your test cases.</p></li>
+<li><p>Take notes on the details of your testing environment and what happened.</p></li>
+<li><p>If you find any bugs (there are a few known bugs), make sure to document them. You can see an example bug report below:</p>
+<blockquote>
+<div><div class="togglereveal "><details class="admonition-body"><summary></summary><img alt="_images/EMBug.png" src="_images/EMBug.png" style="width: 100%;" />
+</details></div></div></blockquote>
+</li>
+</ol>
+</section>
+</section>
+<section class="section" id="automation">
+<h2>Automation</h2>
+<section class="section" id="id8">
+<h3>Summary</h3>
+<p>Now let’s automate some tests!</p>
+</section>
+<section class="section" id="id9">
+<h3>Steps</h3>
+<ol class="arabic simple">
+<li><p>In the <cite>nine-nine</cite> directory, install the packages needed to run automated tests. (If you can’t remember, look back at a previous project.)</p></li>
+<li><p>Create your test file(s).</p></li>
+<li><p>Automate <strong>each</strong> of your manual tests.</p></li>
+<li><p>Run your tests with <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">run</span> <span class="pre">test</span></code>. (Notice in <cite>package.json</cite> that the <code class="docutils literal notranslate"><span class="pre">test</span></code> script has been set to run <code class="docutils literal notranslate"><span class="pre">jest</span></code>.)</p></li>
+</ol>
+</section>
+</section>
+<section class="section" id="going-further">
+<h2>Going Further</h2>
+<section class="section" id="more-testing">
+<h3>More Testing</h3>
+<p>You have completed the core of this lab! Now, do some exploration with the app you have been given. You can dive deeper into any of the topics that have already been covered, or bring in ideas from other labs (unit tests, page objects, extending pages, API testing, etc.). If you have the time, choose a few different topics, not just one.</p>
+</section>
+<section class="section" id="questions">
+<h3>Questions</h3>
+<p>Answer the questions below in the file where you kept your exploratory notes.</p>
+<ol class="arabic simple">
+<li><p>What is the primary purpose for quality assurance?</p></li>
+<li><p>How can using acceptance criteria improve the overall quality of an application?</p></li>
+<li><p>Why is planning such an important part of the testing process?</p></li>
+<li><p>Why is it important to have clear steps to reproduce a bug included in a bug report?</p></li>
+</ol>
+<p><strong>When you are done, upload all your work to GitHub.</strong></p>
+</section>
+</section>
+</section>
+
+        </main>
+
+        <footer id="page-footer">
+            <p>&copy; 2022 Devmountain</p>
+        </footer>
+      </div>
+
+      <script src="_static/main.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+  </body>
+</html>
